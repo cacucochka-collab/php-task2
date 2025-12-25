@@ -1,0 +1,15 @@
+{
+    "name": "insomnia/php-task2",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "cacucochka-collab",
+            "email": "cacucochka@gmail.com"
+        }
+    ],
+    "require": {}
+}

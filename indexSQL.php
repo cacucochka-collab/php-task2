@@ -1,6 +1,6 @@
 <?php
 
-use task2\BuilderRequestSQL;
+use App\BuilderRequestSQL;
 
 require_once 'vendor/autoload.php';
 
@@ -8,7 +8,7 @@ $builderRequest = new BuilderRequestSQL();
 $requestSQL = $builderRequest->select(["id","name"])
     ->from("users")
     ->orderBy("id")
-    ->orderBy("name", )
+    ->orderBy("name")
     ->PrintConsole();
 
 print_r($requestSQL);

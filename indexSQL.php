@@ -9,6 +9,7 @@ $requestSQL = $builderRequest->select(["id","name"])
     ->from("users")
     ->where("name")
     ->orderBy("id")
-    ->PrintConsole();
+    ->groupBy("name")
+    ->toSql();
 
 print_r($requestSQL);
